@@ -1,0 +1,16 @@
+.header {
+    background-color: #2f343e;
+    height: fit-content;
+    color: whitesmoke;
+    font-family: -apple-system;
+    font-size: 1.5em;
+}
+
+.header div {
+    display: inline-block;
+    margin: 5px 20px;
+}
+
+.title {
+    margin-right: 100px;
+}

@@ -1,0 +1,30 @@
+.container {
+    display: flex;
+    border: 1px solid gray;
+    border-radius: 5px;
+    width: fit-content;
+    height: 150px;
+    margin: auto;
+    padding: 30px 30px;
+    margin-top: 20px;
+}
+
+.input {
+    border: none;
+    border-bottom: 1px solid gray;
+    margin-right: 10px;
+}
+
+.input:focus {
+    outline: none;
+}
+
+.form {
+    margin-right: 30px;
+}
+
+.rates {
+    font-family: -apple-system;
+    text-align: left;
+    margin-left: 10px;
+}

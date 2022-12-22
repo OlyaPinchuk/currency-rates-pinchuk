@@ -1,23 +1,31 @@
 import logo from './logo.svg';
 import './App.css';
+import Header from "./components/header/header";
+import Converter from "./components/converter/converter";
+import {useEffect, useState} from "react";
 
 function App() {
+
+    const [currencyList, setCurrencyList] = useState();
+
+    const fetchCurrencyList = () => {
+        fetch('https://bank.gov.ua/NBUStatService/v1/statdirectory/exchange?json', {
+            headers: {},
+        })
+            .then(res => res.json())
+            .then(data => {
+                setCurrencyList(data)
+            })
+    };
+
+    useEffect(() => {
+        fetchCurrencyList()
+    },[]);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <Header currencyList = {currencyList}></Header>
+        <Converter currencyList = {currencyList}></Converter>
     </div>
   );
 }
