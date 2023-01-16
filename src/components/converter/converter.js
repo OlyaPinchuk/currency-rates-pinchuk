@@ -19,6 +19,7 @@ function Converter(props) {
         if (currencyList && !currencyList.find(c => c.cc === 'UAH')) {
             currencyList.push(uah)
         }
+        // eslint-disable-next-line
     }, [props.currencyList]);
 
     const handleFromSelect = (e) => {
