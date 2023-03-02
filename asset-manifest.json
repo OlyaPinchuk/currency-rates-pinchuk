@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/currency-rates-pinchuk/static/css/main.ae227e69.css",
+    "main.js": "/currency-rates-pinchuk/static/js/main.4cd9e7e1.js",
+    "static/js/787.238a90ef.chunk.js": "/currency-rates-pinchuk/static/js/787.238a90ef.chunk.js",
+    "index.html": "/currency-rates-pinchuk/index.html",
+    "main.ae227e69.css.map": "/currency-rates-pinchuk/static/css/main.ae227e69.css.map",
+    "main.4cd9e7e1.js.map": "/currency-rates-pinchuk/static/js/main.4cd9e7e1.js.map",
+    "787.238a90ef.chunk.js.map": "/currency-rates-pinchuk/static/js/787.238a90ef.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ae227e69.css",
+    "static/js/main.4cd9e7e1.js"
+  ]
+}
